@@ -30,21 +30,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="updateTipAmount"
-            android:text="@string/percent_10" />
+            android:text="@string/percent_10"
+            android:tag=".10"/>
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="updateTipAmount"
-            android:text="@string/percent_15" />
+            android:text="@string/percent_15" 
+            android:tag=".15"/>
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/percent_20"
-            android:onClick="updateTipAmount" />
+            android:onClick="updateTipAmount" 
+            android:tag=".20"/>
 
        </LinearLayout>
 

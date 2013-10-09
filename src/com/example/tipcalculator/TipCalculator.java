@@ -1,8 +1,6 @@
 package com.example.tipcalculator;
 
 import java.text.DecimalFormat;
-import java.text.NumberFormat;
-import java.text.ParseException;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -31,12 +29,10 @@ public class TipCalculator extends Activity {
 
 		Button tipPercentageButton = (Button) view;
 		Float tipPercentage;
-		try {
-			Number number = NumberFormat.getPercentInstance().parse(tipPercentageButton.getText().toString());
-			tipPercentage = number.floatValue();
-		} catch (ParseException e) {
-			return;
-		}
+
+		String number = tipPercentageButton.getTag().toString();
+		tipPercentage = Float.parseFloat(number);
+
 		EditText amount = (EditText) findViewById(R.id.amount);
 		String amountText = amount.getText().toString();
 
