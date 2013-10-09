@@ -7,6 +7,7 @@
     <string name="percent_10">10%</string>
     <string name="percent_15">15%</string>
     <string name="percent_20">20%</string>
+    <string name="NUMBER_FORMAT">$0.00</string>
     
     
 </resources>

@@ -45,7 +45,7 @@ public class TipCalculator extends Activity {
 		Float tipAmount = tipPercentage * amountValue;
 		TextView tipAmountView = (TextView) findViewById(R.id.tipAmount);
 
-		DecimalFormat df = new DecimalFormat("$0.00");
+		DecimalFormat df = new DecimalFormat(getResources().getString(R.string.NUMBER_FORMAT));
 		tipAmountView.setText(String.valueOf(df.format(tipAmount)));
 
 	}
